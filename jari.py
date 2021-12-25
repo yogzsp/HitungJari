@@ -46,7 +46,7 @@ while True:
  
         # print(fingers)
         totalFingers = fingers.count(1)
-        print(totalFingers)
+        print(totalFingers," Jari")
 
         cv2.rectangle(img,(20,255),(170,425),(0,255,0),cv2.FILLED)   
         cv2.putText(img,str(totalFingers),(45,375),cv2.FONT_HERSHEY_PLAIN,
@@ -54,7 +54,7 @@ while True:
  
  
  
-    cv2.imshow("Image", img)
+    cv2.imshow("Berhitung menggunakan jarimu", img)
     k = cv2.waitKey(1) & 0xFF
     if k == 27 or k == ord('q'):
         break
